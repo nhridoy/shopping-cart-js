@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Javascript</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <nav class="nav nav-tabs navbar navbar-brand bg-danger text-light p-2">Shopping Cart - Javascript</nav>
+    </div>
+    <div class="products container">
+        <div class="card-group">
+            <div class="card card-body" id="camera">
+                <img class="img-fluid" src="static/images/camera.jpeg" alt="">
+                <p class="text-center"><span>Camera</span> <b>36000</b> TK</p>
+                <button type="submit" class="add btn btn-danger">Add to Cart</button>
+            </div>
+            <div class="card card-body" id="headphone">
+                <img class="img-fluid" src="static/images/headphone.jpg" alt="">
+                <p class="text-center"><span>Headphone</span> <b>1500</b> TK</p>
+                <button type="submit" class="add btn btn-danger">Add to Cart</button>
+            </div>
+            <div class="card card-body" id="shoe">
+                <img class="img-fluid" src="static/images/shoe.jpg" alt="">
+                <p class="text-center"><span>Shoe</span>  <b>2000</b> TK</p>
+                <button type="submit" class="add btn btn-danger">Add to Cart</button>
+            </div>
+            <div class="card card-body" id="sunglass">
+                <img class="img-fluid" src="static/images/sunglass.jpg" alt="">
+                <p class="text-center"><span>Sunglass</span> <b>900</b> TK</p>
+                <button type="submit" class="add btn btn-danger">Add to Cart</button>
+            </div>
+            <div class="card card-body" id="watch">
+                <img class="img-fluid" src="static/images/watch.jpg" alt="">
+                <p class="text-center"><span>Watch</span> <b>3000</b> TK</p>
+                <button type="submit" class="add btn btn-danger">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart container mt-2">
+        <table class="table table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th scope="col" >No</th>
+                    <th scope="col" >Image</th>
+                    <th scope="col" >Product Name</th>
+                    <th scope="col" >Unit Price</th>
+                    <th scope="col" >Quaintity</th>
+                    <th scope="col" >Quaintity Price</th>
+                    <th scope="col" >Remove</th>
+                </tr>
+            </thead>
+            <tbody class="all-items">
+                
+            </tbody>
+        </table>
+        <div class="price-section row">
+            <div class="coupon col-4">
+                <form action="/">
+                    <label class="form-label" for="coupon-text"><b>Insert Coupon</b></label> <span class="demo-coupons">(off5, off10, off15)</span><br>
+                    <input class="form-control" type="text" placeholder="coupon" id="coupon-text">
+                    <button class="btn btn-danger my-2" id="coupon-btn" type="submit">Apply Coupon</button>
+                </form>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-4">
+                        <span><b>Subtotal: </b></span> <br>
+                        <span><b>Discount: </b></span><br>
+                    </div>
+                    <div class="col-8">
+                        <span class="subtotal-price"><b>0</b></span> <br>
+                        <span class="discount-price"><b>0</b></span><br>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <span><b>Grandtotal: </b></span> <br>
+                    </div>
+                    <div class="col-8">
+                        <span class="grandtotal-price"><b>0</b></span> <br>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/product.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
