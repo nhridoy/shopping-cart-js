@@ -15,10 +15,44 @@
     text-align: center;
 }
 
+.coupon-btn{
+        padding-left: 0;
+        padding-right: 0;
+}
+#coupon-btn{
+    width: 100%;
+}
+
 @media (max-width: 767px) {
     #p-quantity{
         display: flex;
-        /* flex-direction: column-reverse;
-        align-items: center; */
+        /* flex-direction: column-reverse; */
+        align-items: center;
+        justify-content: center;
     }
+    tbody, td {
+        border-style: hidden;
+    }
+}
+
+@media (max-width: 991px) {
+    .coupon-btn{
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+}
+#coupon-btn{
+    width: 100%;
+}
+}
+
+@media (max-width: 530px) {
+    thead{
+        display: none;
+    }
+}
+
+@media (max-width: 407px) {
+    /* Need To Fix Table */
 }

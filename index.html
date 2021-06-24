@@ -62,11 +62,14 @@
             <div class="coupon col-lg-5 col-md-5">
                 <form action="/">
                     <label class="form-label" for="coupon-text"><b>Insert Coupon</b></label> <span class="demo-coupons">(off5, off10, off15)</span><br>
-                    <div class="row">
-                        <div class="col-lg-8 px-md-0 mb-md-2 px-sm-0 mb-sm-2">
+                    <div class="row coupon-row">
+                        <div class="col-lg-8">
                             <input class="form-control" type="text" placeholder="coupon" id="coupon-text">
                         </div>
-                        <button class="btn btn-danger col-lg-4 " id="coupon-btn" type="submit">Apply Coupon</button>
+                        <div class="col-lg-4 coupon-btn">
+
+                            <button class="btn btn-danger " id="coupon-btn" type="submit">Apply Coupon</button>
+                        </div>
                     </div>
                 </form>
             </div>
