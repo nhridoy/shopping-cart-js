@@ -59,15 +59,46 @@
             </tbody>
         </table>
         <div class="price-section row">
-            <div class="coupon col-4">
+            <div class="coupon col-lg-5 col-md-5">
                 <form action="/">
                     <label class="form-label" for="coupon-text"><b>Insert Coupon</b></label> <span class="demo-coupons">(off5, off10, off15)</span><br>
-                    <input class="form-control" type="text" placeholder="coupon" id="coupon-text">
-                    <button class="btn btn-danger my-2" id="coupon-btn" type="submit">Apply Coupon</button>
+                    <div class="row">
+                        <div class="col-lg-8 px-md-0 mb-md-2 px-sm-0 mb-sm-2">
+                            <input class="form-control" type="text" placeholder="coupon" id="coupon-text">
+                        </div>
+                        <button class="btn btn-danger col-lg-4 " id="coupon-btn" type="submit">Apply Coupon</button>
+                    </div>
                 </form>
             </div>
-            <div class="col-3"></div>
-            <div class="col-5">
+            <div class="col-lg-2 col-md-2 my-sm-3"></div>
+            <div class="subtotal_price col-lg-5 col-md-5">
+                <div class="row">
+                    <div class="col ">
+                        <strong>Subtotal :</strong>
+                    </div>
+                    <div class="col subtotal-price" id="subtotal_amount">
+                        0
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <strong>Disocunt :</strong>
+                    </div>
+                    <div class="col discount-price" id="product_discount_amount">
+                        0
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col">
+                        <strong>Grandtotal :</strong>
+                    </div>
+                    <div class="col grandtotal-price" id="product_grandTotal">
+                        0
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-5">
                 <div class="row">
                     <div class="col-4">
                         <span><b>Subtotal: </b></span> <br>
@@ -89,7 +120,7 @@
                 </div>
                 
                 
-            </div>
+            </div> -->
         </div>
     </div>
     

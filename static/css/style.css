@@ -1,3 +1,6 @@
+.navbar-brand{
+    margin-right: 0;
+}
 .img-table{
     width: 30px;
 }
@@ -10,4 +13,12 @@
     border: none;
     font-weight: bold;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    #p-quantity{
+        display: flex;
+        /* flex-direction: column-reverse;
+        align-items: center; */
+    }
 }
